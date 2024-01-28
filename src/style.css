@@ -1,0 +1,94 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Counter */
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.counter .title {
+    letter-spacing: 8px;
+    user-select: none;
+}
+
+.counter .functions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.counter .functions .box {
+    background-color: rgba(147, 193, 247, 0.8);
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 5px rgba(142, 172, 207, 0.2);
+    padding: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 60px;
+    user-select: none;
+}
+
+.counter .functions .box:hover {
+    cursor: pointer;
+    background-color: rgba(147, 193, 247, 0.7);
+}
+
+.counter .functions .icons {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+}
+
+.icon-reload, .icon-back {
+    display: flex;
+    background-color: rgba(243, 234, 150, 0.8);
+    border-radius: 20%;
+    box-shadow: 8px 8px 5px rgba(142, 172, 207, 0.2);
+    padding: 8px;
+}
+
+.icon-reload:hover, .icon-back:hover {
+    cursor: pointer;
+    background-color: rgba(245, 247, 147, 0.7);
+}
+
+#icon-reload, #icon-back {
+    height: 22px; 
+    -webkit-user-drag: none;
+}
+
+.counter .info .text {
+    border-top: 0.4px solid rgba(82, 82, 82, 0.15);
+    color: rgba(82, 82, 82, 0.4);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 70px;
+}
+
